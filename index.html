@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Ticket Pricer</h1>
+      <form>
+        <div class="form-group">
+          <label for="movie">Select a Movie:</label>
+          <select class="form-control" id="movie" required>
+            <option value="" disabled selected hidden>Pick one</option>
+            <option value="1">Beauty and the Beast</option>
+            <option value="2">Kong:Skull Island</option>
+            <option value="3">Logan</option>
+            <option value="4">Get Out</option>
+            <option value="5">Power Rangers</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="time">What time would you like to see your movie?</label>
+          <input type="time" class="form-control" id='time' required>
+        </div>
+        <div class="form-group">
+          <label for="age">Enter your age:</label>
+          <input type="number" class="form-control" id="age" required>
+        </div>
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+      <p id="output-wrapper">Price: $<span id='output'></span></p>
+    </div>
+  </body>
+</html>
